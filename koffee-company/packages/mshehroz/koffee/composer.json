@@ -1,0 +1,26 @@
+{
+    "name": "mshehroz/koffee",
+    "description": "Koffee Company Package",
+    "type": "laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Muhammad Shehroz Sajjad",
+            "email": "shahrozt20@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+                    "Msherhoz\\Koffee\\":"packages/mshehroz/koffee/src"
+        }
+    },
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Msherhoz\\Koffee\\KoffeeServiceProvider"
+            ]
+        }
+    }
+}
