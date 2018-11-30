@@ -10,5 +10,17 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "autoload": {
+        "psr-4": {
+                    "Msherhoz\\Koffee\\":"packages/mshehroz/koffee/src"
+        }
+    },
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Msherhoz\\Koffee\\KoffeeServiceProvider"
+            ]
+        }
+    }
 }

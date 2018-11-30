@@ -34,4 +34,11 @@
       0 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
     ),
   ),
+  'mshehroz/koffee' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Msherhoz\\Koffee\\KoffeeServiceProvider',
+    ),
+  ),
 );

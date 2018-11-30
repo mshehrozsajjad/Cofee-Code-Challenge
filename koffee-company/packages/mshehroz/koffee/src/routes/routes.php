@@ -1,5 +1,5 @@
 <?php
 
-Route::get('koffee',function(){
+Route::get('demo',function(){
     return 'Checking test';
 });

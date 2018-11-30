@@ -3,7 +3,8 @@
 namespace Msherhoz\Koffee;
 
 use Illuminate\Support\ServiceProvider;
-
+use App\Repositories\Coffee\CoffeeRepository;
+use App\Repositories\Coffee\RepositoryInterface;
 class KoffeeServiceProvider extends ServiceProvider
 {
     /**
@@ -13,8 +14,9 @@ class KoffeeServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
-        require __DIR__.'/routes/routes.php';
+        //sds
+
+            $this->loadRoutesFrom(__DIR__.'/routes/routes.php');
     }
 
     /**
@@ -25,5 +27,6 @@ class KoffeeServiceProvider extends ServiceProvider
     public function register()
     {
         //
+        $this->app->singleton(RepositoryInterface::class, CoffeeRepository::class);
     }
 }

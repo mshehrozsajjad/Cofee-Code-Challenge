@@ -4345,11 +4345,23 @@
         "dist": {
             "type": "path",
             "url": "packages/mshehroz/koffee",
-            "reference": "ac28efd7991b427b5198e2fbc4e8485276b6b02e",
+            "reference": "74fb181f1207e2b6b7f50301fc2dcabd3b786420",
             "shasum": null
         },
         "type": "laravel",
+        "extra": {
+            "laravel": {
+                "providers": [
+                    "Msherhoz\\Koffee\\KoffeeServiceProvider"
+                ]
+            }
+        },
         "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Msherhoz\\Koffee\\": "packages/mshehroz/koffee/src"
+            }
+        },
         "license": [
             "MIT"
         ],
@@ -4359,9 +4371,6 @@
                 "email": "shahrozt20@gmail.com"
             }
         ],
-        "description": "Koffee Company Package",
-        "transport-options": {
-            "symlink": true
-        }
+        "description": "Koffee Company Package"
     }
 ]

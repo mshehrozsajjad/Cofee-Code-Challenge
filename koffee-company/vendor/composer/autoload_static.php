@@ -79,6 +79,7 @@ class ComposerStaticInit17b4fc79a2082d2db1c6dd248f132a77
         ),
         'M' => 
         array (
+            'Msherhoz\\Koffee\\' => 16,
             'Monolog\\' => 8,
         ),
         'L' => 
@@ -244,6 +245,11 @@ class ComposerStaticInit17b4fc79a2082d2db1c6dd248f132a77
         array (
             0 => __DIR__ . '/..' . '/nunomaduro/collision/src',
         ),
+        'Msherhoz\\Koffee\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/packages/mshehroz/koffee/src',
+            1 => __DIR__ . '/..' . '/mshehroz/koffee/packages/mshehroz/koffee/src',
+        ),
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
@@ -343,6 +349,7 @@ class ComposerStaticInit17b4fc79a2082d2db1c6dd248f132a77
     );
 
     public static $classMap = array (
+        'App\\Coffee' => __DIR__ . '/../..' . '/app/Coffee.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -350,6 +357,7 @@ class ComposerStaticInit17b4fc79a2082d2db1c6dd248f132a77
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
+        'App\\Http\\Controllers\\CoffeeController' => __DIR__ . '/../..' . '/app/Http/Controllers/CoffeeController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
@@ -359,11 +367,15 @@ class ComposerStaticInit17b4fc79a2082d2db1c6dd248f132a77
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Product' => __DIR__ . '/../..' . '/app/Product.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'App\\Repositories\\Coffee\\Coffee' => __DIR__ . '/../..' . '/app/Repositories/Coffee/CoffeeRepository.php',
+        'App\\Repositories\\Coffee\\RepositoryInterface' => __DIR__ . '/../..' . '/app/Repositories/Coffee/RepositoryInterface.php',
+        'App\\Sale' => __DIR__ . '/../..' . '/app/Sale.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'BeyondCode\\DumpServer\\DumpServerCommand' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/DumpServerCommand.php',
         'BeyondCode\\DumpServer\\DumpServerServiceProvider' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/DumpServerServiceProvider.php',
@@ -2028,6 +2040,8 @@ class ComposerStaticInit17b4fc79a2082d2db1c6dd248f132a77
         'Monolog\\ResettableInterface' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/ResettableInterface.php',
         'Monolog\\SignalHandler' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/SignalHandler.php',
         'Monolog\\Utils' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Utils.php',
+        'Msherhoz\\Koffee\\Koffee' => __DIR__ . '/../..' . '/packages/mshehroz/koffee/src/Koffee.php',
+        'Msherhoz\\Koffee\\KoffeeServiceProvider' => __DIR__ . '/../..' . '/packages/mshehroz/koffee/src/KoffeeServiceProvider.php',
         'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider' => __DIR__ . '/..' . '/nunomaduro/collision/src/Adapters/Laravel/CollisionServiceProvider.php',
         'NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler' => __DIR__ . '/..' . '/nunomaduro/collision/src/Adapters/Laravel/ExceptionHandler.php',
         'NunoMaduro\\Collision\\Adapters\\Laravel\\Inspector' => __DIR__ . '/..' . '/nunomaduro/collision/src/Adapters/Laravel/Inspector.php',
@@ -2703,6 +2717,7 @@ class ComposerStaticInit17b4fc79a2082d2db1c6dd248f132a77
         'PhpParser\\Parser\\Tokens' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Parser/Tokens.php',
         'PhpParser\\PrettyPrinterAbstract' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/PrettyPrinterAbstract.php',
         'PhpParser\\PrettyPrinter\\Standard' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/PrettyPrinter/Standard.php',
+        'ProductsTableSeeder' => __DIR__ . '/../..' . '/database/seeds/ProductsTableSeeder.php',
         'Prophecy\\Argument' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument.php',
         'Prophecy\\Argument\\ArgumentsWildcard' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument/ArgumentsWildcard.php',
         'Prophecy\\Argument\\Token\\AnyValueToken' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument/Token/AnyValueToken.php',
