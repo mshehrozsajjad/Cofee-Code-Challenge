@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "66ca7343889332c2b8ecca11c251430c",
+    "content-hash": "808cbecba955735f19c41c3c7eeb04c8",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -822,6 +822,30 @@
                 "psr-3"
             ],
             "time": "2018-11-05T09:00:11+00:00"
+        },
+        {
+            "name": "mshehroz/koffee",
+            "version": "dev-develop",
+            "dist": {
+                "type": "path",
+                "url": "packages/mshehroz/koffee",
+                "reference": "ac28efd7991b427b5198e2fbc4e8485276b6b02e",
+                "shasum": null
+            },
+            "type": "laravel",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Muhammad Shehroz Sajjad",
+                    "email": "shahrozt20@gmail.com"
+                }
+            ],
+            "description": "Koffee Company Package",
+            "transport-options": {
+                "symlink": true
+            }
         },
         {
             "name": "nesbot/carbon",
@@ -4204,7 +4228,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "mshehroz/koffee": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

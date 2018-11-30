@@ -1,0 +1,14 @@
+{
+    "name": "mshehroz/koffee",
+    "description": "Koffee Company Package",
+    "type": "laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Muhammad Shehroz Sajjad",
+            "email": "shahrozt20@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

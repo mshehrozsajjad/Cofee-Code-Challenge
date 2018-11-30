@@ -4337,5 +4337,31 @@
             "testing",
             "xunit"
         ]
+    },
+    {
+        "name": "mshehroz/koffee",
+        "version": "dev-develop",
+        "version_normalized": "dev-develop",
+        "dist": {
+            "type": "path",
+            "url": "packages/mshehroz/koffee",
+            "reference": "ac28efd7991b427b5198e2fbc4e8485276b6b02e",
+            "shasum": null
+        },
+        "type": "laravel",
+        "installation-source": "dist",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Muhammad Shehroz Sajjad",
+                "email": "shahrozt20@gmail.com"
+            }
+        ],
+        "description": "Koffee Company Package",
+        "transport-options": {
+            "symlink": true
+        }
     }
 ]
